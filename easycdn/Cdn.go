@@ -11,7 +11,7 @@ import (
 
 type Cdn interface {
 	constructs.Construct
-	Distribution() awscloudfront.CloudFrontWebDistribution
+	Distribution() awscloudfront.Distribution
 	// The tree node.
 	Node() constructs.Node
 	// Returns a string representation of this construct.
@@ -23,8 +23,8 @@ type jsiiProxy_Cdn struct {
 	internal.Type__constructsConstruct
 }
 
-func (j *jsiiProxy_Cdn) Distribution() awscloudfront.CloudFrontWebDistribution {
-	var returns awscloudfront.CloudFrontWebDistribution
+func (j *jsiiProxy_Cdn) Distribution() awscloudfront.Distribution {
+	var returns awscloudfront.Distribution
 	_jsii_.Get(
 		j,
 		"distribution",
